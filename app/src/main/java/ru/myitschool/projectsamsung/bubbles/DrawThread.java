@@ -101,7 +101,7 @@ public class DrawThread extends Thread {
                         }
                     }
 
-                    if(timer.getSec()%2==1 && timer.getSec()!=timeAdd){
+                    if(timer.getSec()%3==0 && timer.getSec()!=timeAdd){
                         for (int i = 0; i < 5; i++) {
                             addCircle(height, width);
                         }

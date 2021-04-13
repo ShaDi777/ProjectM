@@ -17,7 +17,7 @@ public class RulesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rules);
         rulesText=findViewById(R.id.rulesText);
         rulesText.setText("Bubble Game: По нажатию исчезают круги, нужно успеть убрать их все.\n\n " +
-                "Square Game: Нажать по порядку от 1 до 36\n\n " +
+                "Square Game: Нажать по порядку от 1 до Максимального числа\n\n " +
                 "Number Game: На экране число(нажмите на него, чтобы начать), запомните его и сравните с предыдущим");
     }
 

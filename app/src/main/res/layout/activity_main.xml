@@ -26,11 +26,11 @@
             android:onClick="openSquareGame"/>
     <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
         <TableRow>
-            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="5x5" android:onClick="set5"/>
-            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="6x6" android:onClick="set6"/>
-            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="7x7" android:onClick="set7"/>
-            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="8x8" android:onClick="set8"/>
-            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="9x9" android:onClick="set9"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="5x5" android:onClick="set5" android:id="@+id/b5"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="6x6" android:onClick="set6" android:id="@+id/b6"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="7x7" android:onClick="set7" android:id="@+id/b7"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="8x8" android:onClick="set8" android:id="@+id/b8"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="9x9" android:onClick="set9" android:id="@+id/b9"/>
         </TableRow>
     </TableLayout>
 

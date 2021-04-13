@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".bubbles.BubbleGameActivity"/>
+        <activity android:name=".bubbles.BubbleGameActivity" android:theme="@style/NoNavigationBar"/>
         <activity android:name=".squares.SquareGameActivity"/>
         <activity android:name=".numbers.NumbersGameActivity"/>
         <activity android:name=".RulesActivity"/>

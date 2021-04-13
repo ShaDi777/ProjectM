@@ -1,6 +1,7 @@
 package ru.myitschool.projectsamsung;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -19,12 +20,21 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     int amountSqr=5*5;
+    Button b5,b6,b7,b8,b9;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        b5=findViewById(R.id.b5);
+        b6=findViewById(R.id.b6);
+        b7=findViewById(R.id.b7);
+        b8=findViewById(R.id.b8);
+        b9=findViewById(R.id.b9);
+        returnState();
+        b5.setBackgroundColor(Color.BLUE);
+
     }
 
     public void openBubbleGame(View view) {
@@ -49,21 +59,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     //For SquareGame
     public void set5(View view) {
         amountSqr=5*5;
+        returnState();
+        b5.setBackgroundColor(Color.BLUE);
     }
     public void set6(View view) {
         amountSqr=6*6;
+        returnState();
+        b6.setBackgroundColor(Color.BLUE);
     }
     public void set7(View view) {
         amountSqr=7*7;
+        returnState();
+        b7.setBackgroundColor(Color.BLUE);
     }
     public void set8(View view) {
         amountSqr=8*8;
+        returnState();
+        b8.setBackgroundColor(Color.BLUE);
     }
     public void set9(View view) {
         amountSqr=9*9;
+        returnState();
+        b9.setBackgroundColor(Color.BLUE);
+    }
+    public void returnState(){
+        b5.setBackgroundColor(Color.CYAN);
+        b6.setBackgroundColor(Color.CYAN);
+        b7.setBackgroundColor(Color.CYAN);
+        b8.setBackgroundColor(Color.CYAN);
+        b9.setBackgroundColor(Color.CYAN);
     }
 }

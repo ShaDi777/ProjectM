@@ -10,12 +10,12 @@ public class TimerThread extends Thread {
     public void run() {
         time=0;
         while(running) {
+            time++;
             try {
                 sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            time++;
         }
     }
 
@@ -36,32 +36,9 @@ public class TimerThread extends Thread {
         return time_str;
     }
 
-    public void setInTextViewDown(int n, TextView t){
-        String time_str = "0:00";
-        int timeN = n - time;
-        if(timeN<10){
-            time_str="0:0"+timeN;
-        }else if(timeN<60){
-            time_str="0:"+timeN;
-        }else{
-            int min = timeN/60;
-            if((timeN-min*60)<10) {
-                time_str = min + ":0" + (timeN - min * 60);
-            }else{
-                time_str=min+":"+(timeN-min*60);
-            }
-        }
-        t.setText(time_str);
-    }
-
-
-
-
-
     public int getSec(){
         return time;
     }
-
 
     public void stopRunningTime(){
         running=false;
