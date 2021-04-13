@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="center"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:backgroundTintMode="add"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bubbleGame"
+            android:text="BUBBLES GAME"
+            android:layout_marginBottom="25dp"
+            android:onClick="openBubbleGame"/>
+
+
+    <Button
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/squareGame"
+            android:text="SQUARE GAME"
+            android:onClick="openSquareGame"/>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp">
+        <TableRow>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="5x5" android:onClick="set5"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="6x6" android:onClick="set6"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="7x7" android:onClick="set7"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="8x8" android:onClick="set8"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="9x9" android:onClick="set9"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/numberGame"
+            android:text="NUMBER GAME"
+            android:layout_marginBottom="25dp"
+            android:onClick="openNumberGame"/>
+
+    <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rulesBtn"
+            android:background="@color/darkGray"
+            android:text="RULES"
+            android:onClick="openRules"/>
+
+
+</LinearLayout>
